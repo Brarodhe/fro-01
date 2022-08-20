@@ -1,0 +1,22 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.bg-negro {
+    background-color: #140405;
+    color: #ffff;
+}
+
+h1,
+.bg-cafe {
+    background: #B99F65;
+    color: #ffff;
+}
+
+nav {
+    text-align: center;
+}
