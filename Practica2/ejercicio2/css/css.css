@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sct-contenedor {
+    width: 100%;
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, red, orange);
+}
+
+.caja {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.caja .numero {
+    font-size: 60px;
+}
+
+.caja .indicador {
+    font-size: 20px;
+}
