@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    /*incluye el tamaño del  borde*/
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caja {
+    border: 2px solid #000;
+    height: 100px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde {
+    background-color: #A3CB38;
+}
+
+.amarillo {
+    align-self: flex-start;
+    background-color: #FFC312;
+}
+
+.rojo {
+    background-color: #EA2027;
+    order: -1;
+    /*entre mayor sea el numero mas a la derecha, entre menor mas a la izquierda*/
+}
+
+.azul {
+    background-color: #0652DD;
+}
+
+.morado {
+    align-self: flex-end;
+    background-color: #833471;
+}
+
+#sct-contenedor {
+    align-items: center;
+    /*acomoda los elementos segun su eje secundario*/
+    border: 2px solid #2f3640;
+    display: flex;
+    flex-direction: row;
+    /*define el eje principal. Ya sea vertical u horizontal*/
+    justify-content: space-between;
+    /*permite acomodar los elementos hijos segun el eje principal*/
+    /*flex-end, flex-start, center, space-around, space-between, evenly*/
+    /*flex-wrap: wrap;*/
+    /*permite que mantenga el tamaño original y lo que no cabe pasa abajo. Como si tuviera 30%*/
+    height: 800px;
+}

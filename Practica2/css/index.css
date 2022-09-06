@@ -1,14 +1,148 @@
-.sct-modulo {
+* {
+    box-sizing: border-box;
+    /*incluye el tamaño del  borde*/
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.sct-contenedor {
     width: 100%;
-    height: 317px;
-    border: 2px solid red;
+    height: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 #sct-1 {
     background-color: black;
     color: white;
+    flex-direction: column;
 }
 
-#sct-4 img {
+#caja1,
+#caja2 {
+    line-height: 40px;
+}
+
+#caja1 p span {
+    color: green;
+}
+
+#caja2 p span {
+    text-decoration: underline;
+}
+
+.sct-1-row {
+    display: flex;
+}
+
+#caja3 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+#caja4 {
+    align-self: flex-end;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    color: gray;
+}
+
+#caja2,
+#caja3,
+#caja4 {
+    font-size: 15px;
+}
+
+#caja1,
+#caja2,
+#caja3,
+#caja4 {
+    height: 150px;
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#sct-2 {
+    height: 800px;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sct-2-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sct-2-row-1-logo {
+    font-weight: bolder;
+}
+
+#sct-2-row-1-heading {
+    font-size: 20px;
+}
+
+.sct-2-row-1-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.sct-2-row-2 {
+    height: 600px;
+    font-size: 100px;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+#sct-3 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sct-3-row-1-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.sct-3-row-1-nav div span {
+    color: orangered;
+}
+
+.sct-3-row-2 {
+    font-size: 80px;
+    width: 40%;
+    color: orangered;
+    font-weight: bold;
+}
+
+.sct-3-row-3 {
+    font-size: 55px;
+    display: flex;
+    align-self: flex-end;
+    width: 65%;
+}
+
+.sct-3-row-4-figure img {
     width: 100%;
+    height: 430px;
 }
