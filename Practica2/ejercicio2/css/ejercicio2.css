@@ -10,14 +10,13 @@ html {
 #sct-contenedor {
     width: 100%;
     height: 500px;
-    border: 2px solid green;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-image: linear-gradient(to right, red, orange);
 }
 
 .caja {
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
