@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+#sct-main {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.caja {
+    border: solid 1px black;
+    height: 250px;
+    width: 50%;
+}
+
+.verde {
+    background: green;
+}
+
+.amarillo {
+    background: yellow;
+}
+
+.rojo {
+    background: red;
+}
+
+.morado {
+    background-color: purple;
+}
+
+
+/* Inicio Media query*/
+
+@media all and (max-width: 576px) {
+    #sct-main {
+        flex-direction: column;
+    }
+    .caja {
+        width: 100%;
+    }
+    .amarillo {
+        order: 0;
+    }
+    .morado {
+        order: 1;
+    }
+    .verde {
+        /* display: none; --> elimina el elemento de la página*/
+        order: 2;
+    }
+    .rojo {
+        order: 3;
+    }
+}
+
+
+/* Final Media query*/

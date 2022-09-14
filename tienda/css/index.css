@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.redes {
+    color: #3D4246;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/*inicio estilos sección oferta */
+
+#sct-ofertas {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+    width: 70%;
+}
+
+#sct-ofertas .img-container {
+    width: 50%;
+}
+
+#sct-ofertas .img-container img {
+    width: 100%;
+}
+
+#sct-ofertas .info {
+    padding-left: 3%;
+    /*eje vertical, por que es relativo al tamaño de la pagina*/
+    width: 50%;
+}
+
+#sct-ofertas .info h2 {
+    color: #3D4246;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#sct-ofertas .info h3 {
+    color: #3D4246;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#sct-ofertas .info p {
+    color: #69727B;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+#sct-ofertas .info p span {
+    font-weight: bold;
+}
+
+
+/*Fin estilos sección oferta */
+
+
+/* Inicio de media query */
+
+
+/* @media all --> que aplique a todas las pantallas blanco y negro, color, tv 
+@media print --> solo impresion 
+@media screen only --> tipo de pantalla especifica */
+
+@media all and (max-width: 992px) {
+    #sct-ofertas {
+        flex-direction: column;
+    }
+    #sct-ofertas .img-container {
+        width: 100%;
+    }
+    #sct-ofertas .info {
+        width: 100%;
+    }
+}
+
+
+/* Fin de Media queries */
