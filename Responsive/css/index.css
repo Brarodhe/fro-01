@@ -1,0 +1,140 @@
+/* Estilos de 0px en adelante */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Monserrat', sans-serif;
+}
+
+header {
+    background: #373c3f;
+    color: #ebebeb;
+}
+
+header #nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    min-height: 32px;
+    padding-left: 4%;
+}
+
+header #nav-mobile span {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header #nav-mobile .material-icons {
+    background: #202529;
+    min-height: 32px;
+    min-width: 32px;
+}
+
+header #nav-desktop {
+    display: none;
+}
+
+#sct-imgs-ribbon {
+    display: flex;
+    flex-direction: column;
+}
+
+#sct-imgs-ribbon .caja {
+    display: flex;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+#sct-imgs-ribbon .morada {
+    align-items: center;
+    background-color: #5B0FA1;
+    color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+#sct-imgs-ribbon .morada span {
+    font-size: 110px;
+}
+
+#sct-imgs-ribbon figure img {
+    width: 100%;
+}
+
+#sct-paragraphs {
+    background: #EBEBEB;
+    display: flex;
+}
+
+#sct-paragraphs .col-parag {
+    padding: 45px;
+}
+
+#sct-paragraphs .col-parag h2 {
+    color: #088CA5;
+    font-size: 25px;
+}
+
+#sct-paragraphs .col-parag p {
+    color: #515151;
+    line-height: 35px;
+    font-size: 22px;
+    padding-top: 40px;
+}
+
+.col-parag-2 {
+    display: none;
+}
+
+
+/* Estilos de 640px en adelante */
+
+@media all and (min-width: 640px) {
+    header #nav-mobile {
+        min-height: 75px;
+    }
+    header #nav-mobile .material-icons {
+        min-height: 75px;
+        min-width: 75px;
+    }
+    #sct-imgs-ribbon .caja {
+        min-width: 640px;
+        min-height: 547px;
+    }
+}
+
+
+/* Estilos de 980px en adelante */
+
+@media all and (min-width: 980px) {
+    header #nav-mobile {
+        display: none;
+    }
+    header #nav-desktop {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        min-height: 100px;
+        padding-left: 4%;
+        width: 60%;
+    }
+    header #nav-desktop a {
+        color: #ebebeb;
+        text-decoration: none;
+    }
+    #sct-imgs-ribbon {
+        display: flex;
+        flex-direction: row;
+    }
+    #sct-imgs-ribbon .caja {
+        min-width: 300px;
+        min-height: 300px;
+    }
+    #sct-paragraphs .col-parag-2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 65px;
+    }
+}
