@@ -1,0 +1,28 @@
+/*sistema de grillas*/
+
+
+/*.container-lg {
+    height: 50vh;
+    background: red;
+    color: white;
+}*/
+
+.rojo {
+    background: red;
+}
+
+.naranja {
+    background: orange;
+}
+
+.amarillo {
+    background: yellow;
+}
+
+.verde {
+    background: green;
+}
+
+.celeste {
+    background: lightblue;
+}
