@@ -355,14 +355,14 @@ footer .footer-nav .logo {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 30%;
+    width: 45%;
 }
 
 .footer-social img {
     background-color: #FFFFFF;
     border-radius: 25px;
-    height: 44px;
-    width: 44px;
+    height: 40px;
+    width: 40px;
 }
 
 .footer-about {
@@ -370,7 +370,7 @@ footer .footer-nav .logo {
     color: #919496;
     flex-direction: column;
     font-size: 10px;
-    height: 100px;
+    height: 400px;
     width: 100%;
 }
 
@@ -386,7 +386,10 @@ footer .footer-nav .logo {
 
 .footer-about .info-disclosures {
     display: flex;
+    line-height: 30px;
+    height: 100px;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 .footer-about .info-legal {
