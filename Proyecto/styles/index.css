@@ -57,6 +57,9 @@
     #sct-main-container .sct-introduction {
         background: #1D75DE;
         color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 450px;
         padding: 48px 15px;
         width: 100%;
@@ -85,12 +88,19 @@
     }
     
     #sct-main-container .sct-introduction .sct-buttons a {
-        color: #FFFFFF;
+        align-items: center;
         border-radius: 25px;
+        color: #FFFFFF;
+        display: flex;
         font-size: 14px;
         font-weight: bolder;
+        justify-content: center;
         padding: 14px 32px;
         text-decoration: none;
+    }
+    
+    #sct-main-container .sct-introduction .sct-buttons a:hover {
+        font-size: 16px;
     }
     
     #sct-main-container .sct-introduction .sct-buttons .btn-getStart {
@@ -99,6 +109,11 @@
     
     #sct-main-container .sct-introduction .sct-buttons .btn-viewPlans {
         border: 2px solid #FFFFFF;
+    }
+    
+    #sct-main-container .sct-introduction .sct-buttons .btn-viewPlans:hover {
+        background-color: rgb(97, 87, 87);
+        opacity: .2;
     }
     
     #sct-main-container .sct-introduction .sct-tAndCs {
@@ -117,8 +132,6 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 780px;
         padding: 35px 15px;
     }
     
@@ -127,8 +140,24 @@
         font-weight: bolder;
     }
     
+    #sct-main-container .sct-whyGoPremium .sct-whyGoPremium-info {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #sct-main-container .sct-whyGoPremium .sct-wgp-small {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        justify-content: space-around;
+    }
+    
     #sct-main-container .sct-whyGoPremium .info-services {
         display: flex;
+        align-items: left;
         height: 142px;
         width: 100%;
     }
@@ -180,6 +209,7 @@
     }
     
     #sct-main-container .sct-plans .sct-plans-header p {
+        text-align: center;
         font-size: 16px;
     }
     
@@ -188,15 +218,24 @@
         width: 29px;
     }
     
+    #sct-main-container .sct-available-plans {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 2500px;
+    }
+    
     #sct-main-container .sct-plans .sct-plan-info {
         background: #fff;
         box-shadow: 5px 10px 8px 5px #D7D7D7;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        height: 470px;
+        height: 440px;
+        justify-content: space-evenly;
         padding: 20px;
-        width: 76%;
+        width: 420px;
     }
     
     #sct-main-container .sct-plans .sct-plan-info .plan-heading {
@@ -209,64 +248,56 @@
     #sct-main-container .sct-plans .sct-plan-info .plan-heading span {
         align-items: center;
         background: #0D72EA;
-        border-radius: 3px;
-        color: #FFFFFF;
+        border-radius: 4px;
         display: flex;
-        font-size: 14px;
-        font-weight: bolder;
-        height: 28px;
+        color: #FFFFFF;
+        height: 25px;
         justify-content: center;
-        width: 95px;
+        width: 100px;
     }
     
-    #sct-main-container .sct-plans .sct-plan-info h3 {
+    .sct-available-plans h3 {
         font-size: 24px;
         font-weight: bold;
     }
     
-    #sct-main-container .sct-plans .sct-plan-info p {
-        font-size: 16px;
-    }
-    
     #sct-main-container .sct-plans .sct-plan-info hr {
-        border-top: 1px solid #787878;
-        border-bottom: 1px solid #CCCCCC;
+        border-top: 2px solid #787878;
+        border-bottom: 2px solid #CCCCCC;
     }
     
     #sct-main-container .sct-plans .sct-plan-info .plan-list {
         display: flex;
         flex-direction: column;
-        height: 140px;
-        justify-content: space-around;
+        height: 35%;
     }
     
     #sct-main-container .sct-plan-info .sct-buttons {
-        background: #191414;
-        border-radius: 25px;
         display: flex;
         height: 50px;
-        justify-content: center;
-        margin-bottom: 20px;
-        width: 100%;
     }
     
     #sct-main-container .sct-plan-info .sct-buttons a {
         align-items: center;
-        display: flex;
+        background: #191414;
+        border-radius: 25px;
         color: #FFFFFF;
+        display: flex;
         font-weight: bold;
+        justify-content: center;
         text-decoration: none;
+        width: 100%;
     }
     
     #sct-main-container .sct-plan-info .sct-tAndCs {
         align-items: flex-end;
         display: flex;
         font-size: 12px;
-        height: 50px;
+        height: 90px;
     }
     
     #sct-main-container .sct-plan-info .sct-tAndCs p,
-    a {
+    #sct-main-container .sct-plan-info .sct-tAndCs a {
         color: #000000;
         font-size: 12px;
         line-height: 18px;
@@ -274,30 +305,20 @@
     
     #sct-main-container .sct-plans .family {
         display: flex;
-        justify-content: space-between;
         height: 470px;
-    }
-    
-    #sct-main-container .family .sct-buttons {
-        margin-top: 50px;
     }
     
     #sct-main-container .sct-plans .student {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         height: 570px;
-    }
-    
-    #sct-main-container .student .sct-buttons {
-        margin-bottom: 80px;
     }
     /* Footer */
     
     footer {
         background: #000000;
         color: #FFFFFF;
-        height: 1180px;
+        height: 1100px;
         width: 100%;
     }
     
@@ -340,19 +361,27 @@
         font-size: 16px;
     }
     
+    .footer-links .footer-links-col a:hover {
+        color: #1ed760;
+    }
+    
     .footer-social {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 70px;
-        width: 45%;
+        width: 200px;
     }
     
     .footer-social img {
-        background-color: #FFFFFF;
+        background-color: #fff;
         border-radius: 25px;
         height: 40px;
         width: 40px;
+    }
+    
+    .footer-social a:hover img {
+        background-color: #1ed760;
     }
     
     .footer-about {
@@ -360,7 +389,6 @@
         color: #919496;
         flex-direction: column;
         font-size: 10px;
-        height: 400px;
         width: 100%;
     }
     
@@ -377,9 +405,7 @@
     .footer-about .info-disclosures {
         display: flex;
         line-height: 30px;
-        height: 100px;
         justify-content: space-between;
-        border: 1px solid red;
     }
     
     .footer-about .info-legal {
@@ -402,6 +428,10 @@
         color: #919496;
     }
     
+    .footer-about a:hover {
+        color: #1ed760;
+    }
+    
     .footer-about .info-year {
         display: flex;
         justify-content: right;
@@ -411,10 +441,184 @@
     }
     /* Estilos de 768px en adelante */
     
-    @media all and (min-width: 768px) {}
+    @media all and (min-width: 768px) {
+        /* Get Premium free */
+        #sct-main-container .sct-introduction .sct-buttons {
+            flex-direction: row;
+            height: 50px;
+            text-align: center;
+            justify-content: space-between;
+            width: 340px;
+        }
+        /* Why go Premium */
+        #sct-main-container .sct-whyGoPremium .sct-whyGoPremium-info {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            justify-content: space-around;
+            padding: 35px 15px;
+        }
+        #sct-main-container .sct-whyGoPremium .sct-wgp-medium {
+            display: flex;
+            flex-direction: row;
+        }
+        /*Footer*/
+        footer {
+            height: 700px;
+            width: 100%;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            justify-content: start;
+        }
+        .footer-links .footer-links-col {
+            display: flex;
+            height: 250px;
+            line-height: 40px;
+            width: 300px;
+        }
+    }
     /* Estilos de 992px en adelante */
     
-    @media all and (min-width: 992px) {}
+    @media all and (min-width: 992px) {
+        header #nav-mobile {
+            display: none;
+        }
+        header #nav-desktop {
+            align-items: center;
+            display: flex;
+            height: 80px;
+            justify-content: space-between;
+        }
+        header #nav-desktop .logo {
+            align-items: center;
+            display: flex;
+            height: 39px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 40px;
+        }
+        header #nav-desktop .logo img {
+            padding-right: 5px;
+            width: 40px;
+        }
+        header #nav-desktop .logo span {
+            font-size: 25px;
+        }
+        header #nav-desktop .logo .logo span sup {
+            font-size: 4px;
+        }
+        header #nav-desktop .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 60%;
+            height: 70px;
+        }
+        header #nav-desktop .nav-menu a {
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 18px 27px;
+            text-decoration: none;
+        }
+        header #nav-desktop .nav-menu a:hover {
+            color: #1ed760;
+        }
+        header #nav-desktop .nav-menu span {
+            font-weight: lighter;
+        }
+        #sct-main-container .sct-introduction .sct-headers h1 {
+            font-size: 40px;
+        }
+        #sct-main-container .sct-introduction .sct-headers h2 {
+            font-size: 24px;
+        }
+        #sct-main-container .sct-whyGoPremium h2 {
+            font-size: 40px;
+        }
+        #sct-main-container .sct-plans .sct-plan-info {
+            width: 440px;
+        }
+        /*Footer*/
+        footer {
+            height: 450px;
+        }
+        .footer-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .footer-nav .logo {
+            font-size: 20px;
+            height: 80px;
+            width: 80px;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            width: 500px;
+        }
+        .footer-about .info-disclosures {
+            font-size: 12px;
+        }
+        .footer-about .info-legal {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+    }
     /* Estilos de 1200px en adelante */
     
-    @media all and (min-width: 1200px) {}
+    @media all and (min-width: 1200px) {
+        #sct-main-container .sct-whyGoPremium {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 35px 15px;
+        }
+        #sct-main-container .sct-whyGoPremium .sct-whyGoPremium-info {
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+        }
+        #sct-main-container .sct-whyGoPremium .sct-wgp-xl {
+            width: 50%;
+        }
+        #sct-main-container .sct-whyGoPremium .info-services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 350px;
+        }
+        #sct-main-container .sct-whyGoPremium .info-services .info-services-text {
+            align-items: center;
+            display: flex;
+            height: 100px;
+        }
+        #sct-main-container .sct-plans {
+            height: 900px;
+        }
+        #sct-main-container .sct-available-plans {
+            display: flex;
+            flex-direction: row;
+            height: 800px;
+            justify-content: space-evenly;
+            width: 990px;
+        }
+        #sct-main-container .sct-plans .sct-plan-info {
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+            padding: 20px;
+            width: 230px;
+        }
+        #sct-main-container .sct-available-plans .sct-plan-info .sct-tAndCs {
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+        }
+    }
