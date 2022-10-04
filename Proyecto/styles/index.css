@@ -190,8 +190,8 @@
         background: #EFEFEF;
         display: flex;
         flex-direction: column;
-        height: 2300px;
-        justify-content: space-between;
+        height: 2500px;
+        justify-content: space-evenly;
         padding: 35px 15px;
     }
     
