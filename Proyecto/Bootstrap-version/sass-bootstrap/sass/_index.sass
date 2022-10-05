@@ -1,10 +1,11 @@
 html
     font-family: $tipografia-principal
     font-size: 16px
-.navbar
-    display: flex
-    justify-content: space-between
-    border: 2px solid red
+.navbar-nav
+    color: $blanco
+    font-weight: $font-weight-bold
+.navbar-collapse
+    flex-direction: row-reverse
 #sct-introduction
     background: $celeste
     color: $blanco
@@ -16,21 +17,77 @@ html
         font-size: 1.75rem
     h2
         font-size: 1.125rem
-    .col-12
-        a
-            border: 1px solid $blanco
-            border-radius: 70px
-            color: $blanco
-            display: flex
-            font-size: 0.875rem
-            justify-content: center
-            padding: 5px
-            text-decoration: none
-            width: 100%
+        font-weight: $font-weight-normal
+    .btn-primary
+        border-radius: $btn-border-radius
+        font-size: $btn-font-size
+        font-weight: $btn-font-weight-bold
+    .btn-outline-light
+        background: $celeste
+    .btn-outline-light:hover
+        background: $btn-link-hover-color
+        color: $blanco
     p
         font-size: 0.6875rem
         a
             color: $blanco
             font-size: 0.6875rem
-        
-        
+.sct-whyGoPremium
+    align-items: center
+    display: flex
+    flex-direction: column
+    height: 75vh
+    padding: 35px 15px
+    h2
+        font-size: 1.75rem
+        font-weight: $font-weight-bold
+.sct-whyGoPremium-info
+    display: flex
+    height: 770px
+    img
+        height: 96px
+        width: 96px
+    h2
+        font-size: 2.5rem
+    h3
+        font-size: 1.3125rem
+        font-weight: $font-weight-bold
+    .col-sm-12
+        align-items: center
+        display: flex
+        height: 15vh
+        .info-services-text
+            padding-left: 20px
+@media all and (min-width: $medium)
+    .sct-whyGoPremium
+        height: 50vh
+        h3
+            font-size: 1.3125rem
+        .col-md-6
+            margin-top: 50px
+            width: 50%
+        .info-services-text
+            padding-left: 0px
+@media all and (min-width: $large)
+    .sct-whyGoPremium
+        height: 50vh
+        width: 80%
+        img
+            height: 142px
+            width: 142px
+            margin-bottom: 25px
+@media all and (min-width: $extra-large)
+    .sct-whyGoPremium
+        height: 40vh
+        .col-xl-1
+            align-content: center
+            display: flex
+            flex-direction: column
+            height: 20vh
+            justify-content: center
+            text-align: center
+            width: 16vh
+        img
+            height: 142px
+            width: 142px
+            margin-bottom: 25px
