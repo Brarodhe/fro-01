@@ -17,7 +17,7 @@ html {
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 75vh;
   justify-content: center;
 }
 #sct-introduction h1 {
@@ -51,7 +51,7 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  height: 780px;
   padding: 35px 15px;
 }
 .sct-whyGoPremium h2 {
@@ -71,7 +71,7 @@ html {
   font-size: 2.5rem;
 }
 .sct-whyGoPremium-info h3 {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 .sct-whyGoPremium-info .col-sm-12 {
@@ -83,9 +83,93 @@ html {
   padding-left: 20px;
 }
 
+.sct-plans {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  height: 2700px;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 15px;
+}
+.sct-plans h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.sct-plans h3 {
+  font-size: 1rem;
+}
+.sct-plans img {
+  height: 15px;
+  width: 20px;
+}
+.sct-plans .sct-available-plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sct-plans .sct-available-plans .sct-plan-info {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px 5px #D7D7D7;
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+  text-align: left;
+  padding: 20px 20px 0px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-heading span {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-heading p {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-heading hr {
+  border-top: 1px #000000 solid;
+  border-bottom: 1px #EFEFEF solid;
+  border-width: 1px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-list {
+  display: flex;
+  flex-direction: column;
+  height: 261px;
+  padding: 32px 20px 16px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sct-plans .sct-available-plans .sct-plan-info .plan-list ul li {
+  font-weight: 600;
+}
+.sct-plans .sct-available-plans .sct-plan-info .sct-btn {
+  height: 48px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .btn {
+  border-radius: 500px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 48px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .sct-tAndCs {
+  color: #535353;
+  margin-top: 12px;
+  font-size: 0.75rem;
+  padding: 4px 20px 20px;
+}
+.sct-plans .sct-available-plans .sct-plan-info .sct-tAndCs a {
+  color: #535353;
+}
+
 @media all and (min-width: 768px) {
   .sct-whyGoPremium {
-    height: 50vh;
+    height: 600px;
   }
   .sct-whyGoPremium h3 {
     font-size: 1.3125rem;
@@ -97,10 +181,29 @@ html {
   .sct-whyGoPremium .info-services-text {
     padding-left: 0px;
   }
+  .sct-plans {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .sct-plans .sct-available-plans .col-md-7 {
+    display: flex;
+    justify-content: center;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info {
+    width: 100%;
+    height: 500px;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .family, .sct-plans .sct-available-plans .col-md-7 .student {
+    height: 600px;
+  }
 }
 @media all and (min-width: 992px) {
+  #sct-introduction {
+    height: 400px;
+  }
   .sct-whyGoPremium {
-    height: 50vh;
+    height: 600px;
     width: 80%;
   }
   .sct-whyGoPremium img {
@@ -108,23 +211,88 @@ html {
     width: 142px;
     margin-bottom: 25px;
   }
+  .sct-plans {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 @media all and (min-width: 1200px) {
+  #sct-introduction {
+    height: 50vh;
+  }
   .sct-whyGoPremium {
-    height: 40vh;
+    height: 70vh;
+    display: flex;
+    width: 100%;
+  }
+  .sct-whyGoPremium .sct-whyGoPremium-info {
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
   .sct-whyGoPremium .col-xl-1 {
     align-content: center;
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    justify-content: center;
+    height: 40vh;
+    justify-content: space-evenly;
     text-align: center;
-    width: 16vh;
+    width: 25%;
   }
   .sct-whyGoPremium img {
     height: 142px;
     width: 142px;
     margin-bottom: 25px;
+  }
+  .sct-plans {
+    align-items: center;
+    display: flex;
+    height: 1100px;
+  }
+  .sct-plans .sct-plans-header {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .sct-plans .sct-available-plans {
+    width: 100%;
+  }
+  .sct-plans .sct-available-plans .col-md-7 {
+    display: flex;
+    justify-content: center;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    width: 270px;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .plan-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 16px 0;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .plan-heading .text-bg-primary {
+    width: 45%;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .plan-heading p {
+    font-size: 0.875rem;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .plan-list {
+    display: flex;
+    padding: 0px 16px 16px;
+    margin: 0px 16px 20px 0px;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .plan-list li {
+    font-size: 0.875rem;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .sct-btn {
+    align-items: center;
+    display: flex;
+  }
+  .sct-plans .sct-available-plans .col-md-7 .sct-plan-info .sct-tAndCs {
+    padding: 4px 16px 16px;
   }
 }/*# sourceMappingURL=base.css.map */

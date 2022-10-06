@@ -264,6 +264,7 @@
     #sct-main-container .sct-plans .sct-plan-info hr {
         border-top: 2px solid #787878;
         border-bottom: 2px solid #CCCCCC;
+        border-width: 1px;
     }
     
     #sct-main-container .sct-plans .sct-plan-info .plan-list {

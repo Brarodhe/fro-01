@@ -4,13 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---- CSS Reset ---->
+    <link rel="stylesheet" href="styles/reset.css">
     <!---- Bootstrap ---->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <!---- iconos ---->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- estilos desde sass-->
     <link rel="stylesheet" href="css/base.css">
 
     <title>Proyecto Spotify - Bootstrap version</title>
+    <meta name="description" content="Spotify Premium bootstrap version as deliverable for FRO-01. Spotify is a digital music service that gives you access to millions of songs without ads">
 </head>
 
 <body>
@@ -78,11 +82,131 @@
                 </div>
             </div>
         </section>
+        <section class="sct-plans container-xl ps-4">
+            <section class="sct-plans-header">
+                <h2>Available plans</h2>
+                <h3>Choose a plan to listen without limits on your phone, speaker, and other devices. Cancel anytime.</h3>
+                <figure>
+                    <img src=" https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg " alt=" ">
+                    <img src="https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg " alt=" ">
+                    <img src="https://content-tooling.spotifycdn.com/images/3fcc3442-3a00-455f-9256-d3115ac3e382_amex.svg " alt=" ">
+                    <img src="https://content-tooling.spotifycdn.com/images/205f3c09-6649-42db-8bf3-7a356be0ae37_discover.svg " alt=" ">
+                    <img src="https://i.scdn.co/image/ab671c3d0000f4300e2f169bed4bb2798accb287 " alt=" ">
+                </figure>
+            </section>
+            <div class="row sct-available-plans ">
+                <div class="col-sm-8 col-md-7 col-xl-3 ">
+                    <div class="row sct-plan-info individual ">
+                        <div class="col plan-heading ">
+                            <span class="badge text-bg-primary ">1 month free</span>
+                            <h3>Individual</h3>
+                            <p>$9.99/month after offer period</p>
+                            <p>1 account</p>
+                            <hr>
+                        </div>
+                        <div class="col plan-list ">
+                            <ul>
+                                <li><span class="material-icons ">check</span>Ad-free music listening</li>
+                                <li><span class="material-icons ">check</span>Play anywhere - even offline</li>
+                                <li><span class="material-icons ">check</span>On-demand playback</li>
+                            </ul>
+                        </div>
+                        <div class="col d-grid gap-2 sct-btn">
+                            <button class="btn btn-dark btn-primary " type="button " onclick="window.location.href='https://www.spotify.com/us/purchase/offer/default-trial-1m/?country=US' ; ">GET STARTED</button>
+                        </div>
+                        <div class="col sct-tAndCs ">
+                            <p><a href="https://www.spotify.com/legal/premium-promotional-offer-terms ">Terms and Conditions apply</a>. 1 month free not available for users who have already tried Premium.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8 col-md-7 col-xl-3 ">
+                    <div class="row sct-plan-info duo ">
+                        <div class="col plan-heading ">
+                            <span class="badge text-bg-primary ">1 month free</span>
+                            <h3>Duo</h3>
+                            <p>$12.99/month after offer period</p>
+                            <p>2 accounts</p>
+                            <hr>
+                        </div>
+                        <div class="col plan-list ">
+                            <ul>
+                                <li><span class="material-icons ">check</span>2 Premium accounts for a couple under one roof</li>
+                                <li><span class="material-icons ">check</span>Ad-free music listening, play offline, on-demand playback</li>
+                            </ul>
+                        </div>
+                        <div class="col d-grid gap-2 sct-btn">
+                            <button class="btn btn-dark btn-primary " type="button " onclick="window.location.href='https://www.spotify.com/us/purchase/offer/duo-1-month-trial?country=US' ; ">GET STARTED</button>
+                        </div>
+                        <div class="col sct-tAndCs ">
+                            <p><a href="https://www.spotify.com/legal/premium-promotional-offer-terms ">Terms and Conditions apply</a>. 1 month free not available for users who have already tried Premium.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8 col-md-7 col-xl-3 ">
+                    <div class="row sct-plan-info family ">
+                        <div class="col plan-heading ">
+                            <span class="badge text-bg-primary ">1 month free</span>
+                            <h3>Family</h3>
+                            <p>$15.99/month after offer period</p>
+                            <p>6 accounts</p>
+                            <hr>
+                        </div>
+                        <div class="col plan-list ">
+                            <ul>
+                                <li><span class="material-icons ">check</span>6 Premium accounts for family members living under one roof</li>
+                                <li><span class="material-icons ">check</span>Block explicit music</li>
+                                <li><span class="material-icons ">check</span>Ad-free music listening, play offline, on-demand playback</li>
+                                <li><span class="material-icons ">check</span>Spotify Kids: a separate app made just for kids</li>
+                            </ul>
+                        </div>
+                        <div class="col d-grid gap-2 sct-btn">
+                            <button class="btn btn-dark btn-primary " type="button " onclick="window.location.href='https://www.spotify.com/us/purchase/offer/new-family-1m?country=US' ; ">GET STARTED</button>
+                        </div>
+                        <div class="col sct-tAndCs ">
+                            <p><a href="https://www.spotify.com/legal/premium-promotional-offer-terms ">Terms and Conditions apply</a>. 1 month free not available for users who have already tried Premium.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8 col-md-7 col-xl-3 ">
+                    <div class="row sct-plan-info student">
+                        <div class="col plan-heading ">
+                            <span class="badge text-bg-primary ">1 month free</span>
+                            <h3>Student</h3>
+                            <p>$4.99/month after offer period</p>
+                            <p>1 account</p>
+                            <hr>
+                        </div>
+                        <div class="col plan-list ">
+                            <ul>
+                                <li><span class="material-icons ">check</span>Hulu (ad-supported) plan</li>
+                                <li><span class="material-icons ">check</span>SHOWTIME</li>
+                                <li><span class="material-icons ">check</span>Ad-free music listening</li>
+                                <li><span class="material-icons ">check</span>Play anywhere - even offline</li>
+                                <li><span class="material-icons ">check</span>On-demand playback</li>
+                            </ul>
+                        </div>
+                        <div class="col d-grid gap-2 sct-btn">
+                            <button class="btn btn-dark btn-primary" type="button" onclick="window.location.href='https://www.spotify.com/us/student/verification' ; ">GET STARTED</button>
+                        </div>
+                        <div class="col sct-tAndCs ">
+                            <p>Offer currently includes access to Hulu (ad-supported) plan and SHOWTIME Streaming Service, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher
+                                education students who haven't already tried Premium.<a href="https://www.spotify.com/legal/premium-promotional-offer-terms ">Terms and Conditions apply</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3 " crossorigin="anonymous "></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ html
     color: $blanco
     display: flex
     flex-direction: column
-    height: 40vh
+    height: 75vh
     justify-content: center
     h1
         font-size: 1.75rem
@@ -36,7 +36,7 @@ html
     align-items: center
     display: flex
     flex-direction: column
-    height: 75vh
+    height: 780px
     padding: 35px 15px
     h2
         font-size: 1.75rem
@@ -50,7 +50,7 @@ html
     h2
         font-size: 2.5rem
     h3
-        font-size: 1.3125rem
+        font-size: 1rem
         font-weight: $font-weight-bold
     .col-sm-12
         align-items: center
@@ -58,9 +58,76 @@ html
         height: 15vh
         .info-services-text
             padding-left: 20px
+.sct-plans
+    background-color: $gris
+    display: flex
+    flex-direction: column
+    height: 2700px
+    justify-content: center
+    text-align: center
+    padding: 35px 15px
+    h2
+        font-size: 2rem
+        font-weight: $font-weight-bold
+    h3
+        font-size: 1rem
+    img
+        height: 15px
+        width: 20px
+    .sct-available-plans
+        display: flex
+        flex-direction: row
+        justify-content: center
+        .sct-plan-info
+            background: $blanco
+            border-radius: 10px
+            box-shadow: 5px 10px 8px 5px #D7D7D7
+            display: flex
+            flex-direction: column
+            height: 620px
+            text-align: left
+            padding: 20px 20px 0px
+            .plan-heading
+                span
+                    margin-bottom: 10px
+                    padding: 4px 8px
+                h3
+                    font-size: 1.5rem
+                    font-weight: $font-weight-bold
+                p
+                    font-weight: $font-weight-semibold
+                    margin-bottom: 0px
+                hr
+                    border-top: 1px $negro solid
+                    border-bottom: 1px $gris solid
+                    border-width: 1px
+            .plan-list
+                display: flex
+                flex-direction: column
+                height: 261px
+                padding: 32px 20px 16px
+                ul
+                    list-style-type: none
+                    padding: 0
+                    li
+                        font-weight: $font-weight-semibold
+            .sct-btn
+                height: 48px
+            .btn
+                border-radius: $btn-border-radius
+                font-size: 0.875rem
+                font-weight: $font-weight-bold
+                height: 48px
+            .sct-tAndCs
+                color: $gris-oscuro
+                margin-top: 12px
+                font-size: 0.75rem
+                padding: 4px 20px 20px
+                a
+                    color: $gris-oscuro                
 @media all and (min-width: $medium)
     .sct-whyGoPremium
-        height: 50vh
+        height: 600px
         h3
             font-size: 1.3125rem
         .col-md-6
@@ -68,26 +135,91 @@ html
             width: 50%
         .info-services-text
             padding-left: 0px
+    .sct-plans
+        display: flex
+        justify-content: center
+        width: 100%
+        .sct-available-plans
+            .col-md-7
+                display: flex
+                justify-content: center
+                .sct-plan-info
+                    width: 100%
+                    height: 500px
+                .family, .student
+                    height: 600px
 @media all and (min-width: $large)
+    #sct-introduction
+        height: 400px
     .sct-whyGoPremium
-        height: 50vh
+        height: 600px
         width: 80%
         img
             height: 142px
             width: 142px
             margin-bottom: 25px
+    .sct-plans
+        display: flex
+        justify-content: space-evenly
 @media all and (min-width: $extra-large)
+    #sct-introduction
+        height: 50vh
     .sct-whyGoPremium
-        height: 40vh
+        height: 70vh
+        display: flex
+        width: 100%
+        .sct-whyGoPremium-info
+            height: 80vh
+            justify-content: space-around
+            align-items: center
+            width: 100%
         .col-xl-1
             align-content: center
             display: flex
             flex-direction: column
-            height: 20vh
-            justify-content: center
+            height: 40vh
+            justify-content: space-evenly
             text-align: center
-            width: 16vh
+            width: 25%
         img
             height: 142px
             width: 142px
             margin-bottom: 25px
+    .sct-plans
+        align-items: center
+        display: flex
+        height: 1100px
+        .sct-plans-header
+            width: 100%
+            padding-bottom: 50px
+        .sct-available-plans
+            width: 100%
+            .col-md-7
+                display: flex
+                justify-content: center     
+                .sct-plan-info
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    height: 800px
+                    width: 270px
+                    .plan-heading
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        padding: 16px 16px 0
+                        .text-bg-primary
+                            width: 45%
+                        p
+                            font-size: 0.875rem
+                    .plan-list
+                        display: flex
+                        padding: 0px 16px 16px
+                        margin: 0px 16px 20px 0px
+                        li
+                            font-size: 0.875rem
+                    .sct-btn
+                        align-items: center
+                        display: flex
+                    .sct-tAndCs
+                        padding: 4px 16px 16px
