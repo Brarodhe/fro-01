@@ -190,7 +190,7 @@
         background: #EFEFEF;
         display: flex;
         flex-direction: column;
-        height: 2500px;
+        height: 2300px;
         justify-content: space-evenly;
         padding: 35px 15px;
     }
@@ -574,13 +574,19 @@
     /* Estilos de 1200px en adelante */
     
     @media all and (min-width: 1200px) {
+        header #nav-desktop {
+            display: flex;
+            justify-content: center;
+        }
         #sct-main-container .sct-whyGoPremium {
             align-items: center;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             padding: 35px 15px;
         }
         #sct-main-container .sct-whyGoPremium .sct-whyGoPremium-info {
+            align-items: center;
             display: flex;
             flex-direction: row;
             height: 400px;
@@ -608,7 +614,7 @@
             flex-direction: row;
             height: 800px;
             justify-content: space-evenly;
-            width: 990px;
+            width: 1100px;
         }
         #sct-main-container .sct-plans .sct-plan-info {
             display: flex;
@@ -621,5 +627,15 @@
             display: flex;
             align-items: flex-start;
             height: 200px;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+        .footer-nav {
+            width: 65%;
+        }
+        .footer-social {
+            width: 160px;
         }
     }
