@@ -28,11 +28,17 @@ html {
 }
 
 #sct-robin-info .robin {
+  border: solid 2px gold;
   align-items: center;
   background: #373c3f;
-  color: #6a5d75;
+  color: #ebebeb;
   display: flex;
   height: 75px;
+  justify-content: center;
+}
+#sct-robin-info .robin p {
+  border: solid 2px green;
+  margin-bottom: 0px;
 }
 #sct-robin-info .flecha {
   align-items: center;
