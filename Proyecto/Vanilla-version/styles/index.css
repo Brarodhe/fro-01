@@ -190,7 +190,7 @@
         background: #EFEFEF;
         display: flex;
         flex-direction: column;
-        height: 2700px;
+        height: 2400px;
         justify-content: space-evenly;
         padding: 35px 15px;
     }
@@ -199,9 +199,10 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 100px;
-        line-height: 40px;
+        height: 200px;
+        line-height: 20px;
         justify-content: space-evenly;
+        border: solid red 1px;
     }
     
     #sct-main-container .sct-plans .sct-plans-header h2 {
@@ -224,7 +225,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 2500px;
+        height: 2200px;
     }
     
     #sct-main-container .sct-plans .sct-plan-info {
@@ -464,6 +465,9 @@
             display: flex;
             flex-direction: row;
         }
+        #sct-main-container .sct-plans {
+            height: 2300px;
+        }
         /*Footer*/
         footer {
             height: 700px;
@@ -539,6 +543,9 @@
         }
         #sct-main-container .sct-whyGoPremium h2 {
             font-size: 40px;
+        }
+        #sct-main-container .sct-plans {
+            height: 2300px;
         }
         #sct-main-container .sct-plans .sct-plan-info {
             width: 440px;
