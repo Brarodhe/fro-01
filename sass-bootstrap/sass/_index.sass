@@ -20,7 +20,6 @@ html
         font-size: 1em
 #sct-robin-info
     .robin
-        border: solid 2px gold
         align-items: center
         background: $gris
         color: $blanco
@@ -28,7 +27,6 @@ html
         height: 75px
         justify-content: center
         p
-            border: solid 2px green
             margin-bottom: 0px
     .flecha
         align-items: center
@@ -37,7 +35,29 @@ html
         display: flex
         height: 75px
         justify-content: center
+.sct-galeria
+    .caja-morada
+        align-items: center
+        background: $morado
+        color: $blanco
+        display: flex
+        height: 50vh
+        justify-content: center
+    img
+        max-height: 50vh
+@media (min-width: 430px)
+    .sct-galeria
+        .caja-morada
+            max-height: 60vh
+        img
+            max-height: 60vh
 @media (min-width: 640px)
     #sct-robin-info
-        .robin, .flecha
+        .robin , .flecha
             height: 150px
+@media (min-width: 980px)
+    .sct-galeria
+        .caja-morada
+            max-height: 20vh
+        img
+            max-height: 20vh

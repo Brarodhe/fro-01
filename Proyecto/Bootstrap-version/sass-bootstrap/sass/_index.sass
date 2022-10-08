@@ -125,7 +125,7 @@ html
                 padding: 4px 20px 20px
                 a
                     color: $gris-oscuro                
-@media all and (min-width: $medium)
+@media (min-width: $medium)
     .sct-whyGoPremium
         height: 600px
         h3
@@ -148,7 +148,7 @@ html
                     height: 500px
                 .family, .student
                     height: 600px
-@media all and (min-width: $large)
+@media (min-width: $large)
     #sct-introduction
         height: 400px
     .sct-whyGoPremium
@@ -161,11 +161,11 @@ html
     .sct-plans
         display: flex
         justify-content: space-evenly
-@media all and (min-width: $extra-large)
+@media (min-width: $extra-large)
     #sct-introduction
-        height: 50vh
+        height: 40vh
     .sct-whyGoPremium
-        height: 70vh
+        height: 50vh
         display: flex
         width: 100%
         .sct-whyGoPremium-info
@@ -193,6 +193,7 @@ html
             width: 100%
             padding-bottom: 50px
         .sct-available-plans
+            display: flex
             width: 100%
             .col-md-7
                 display: flex
@@ -208,14 +209,16 @@ html
                         flex-direction: column
                         justify-content: center
                         padding: 16px 16px 0
+                        height: 100px
                         .text-bg-primary
                             width: 45%
                         p
                             font-size: 0.875rem
                     .plan-list
                         display: flex
-                        padding: 0px 16px 16px
+                        height: 0px
                         margin: 0px 16px 20px 0px
+                        padding: 0px 16px 16px
                         li
                             font-size: 0.875rem
                     .sct-btn

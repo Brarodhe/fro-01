@@ -28,7 +28,6 @@ html {
 }
 
 #sct-robin-info .robin {
-  border: solid 2px gold;
   align-items: center;
   background: #373c3f;
   color: #ebebeb;
@@ -37,7 +36,6 @@ html {
   justify-content: center;
 }
 #sct-robin-info .robin p {
-  border: solid 2px green;
   margin-bottom: 0px;
 }
 #sct-robin-info .flecha {
@@ -49,8 +47,36 @@ html {
   justify-content: center;
 }
 
+.sct-galeria .caja-morada {
+  align-items: center;
+  background: #5b0fa1;
+  color: #ebebeb;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+.sct-galeria img {
+  max-height: 50vh;
+}
+
+@media (min-width: 430px) {
+  .sct-galeria .caja-morada {
+    max-height: 60vh;
+  }
+  .sct-galeria img {
+    max-height: 60vh;
+  }
+}
 @media (min-width: 640px) {
   #sct-robin-info .robin, #sct-robin-info .flecha {
     height: 150px;
+  }
+}
+@media (min-width: 980px) {
+  .sct-galeria .caja-morada {
+    max-height: 20vh;
+  }
+  .sct-galeria img {
+    max-height: 20vh;
   }
 }/*# sourceMappingURL=base.css.map */
