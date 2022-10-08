@@ -199,7 +199,8 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 180px;
+        height: 100px;
+        line-height: 40px;
         justify-content: space-evenly;
     }
     
